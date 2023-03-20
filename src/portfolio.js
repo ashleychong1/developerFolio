@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Ashley Chong",
-  title: "Hello! I'm Ashley",
+  title: "Hi! I'm Ashley",
   subTitle: emoji(
-    "A recent graduate from Boston University passionate about tech innovation 🚀 currently building the Google network."
+    "A recent graduate from Boston University passionate about tech innovation. Currently helping build Google's network. 🚀"
   ),
   resumeLink:
     "https://www.dropbox.com/s/xd5kfyy8uikb3h9/AshleyChong_Resume_Dec2021.pdf?dl=0", // Set to empty to hide the button
@@ -146,10 +146,10 @@ const workExperiences = {
       company: "Google",
       companylogo: require("./assets/images/googleCloudLogo.jpeg"),
       date: "July 2022 – Present",
-      desc: "Joined the Network Operations Residency Program as a fresh grad. Completed rotations as a Technical Program Manager in Network Supply Chain & Commercial Operations and as a Network Engineer in Optical Networking Technologies.",
+      desc: "Joined as part of Network Operations Residency Program, a two-year program for fresh grads, designed to give new hires exposure to different teams within Google Global Networking.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Gained experience in Technical Program Management and Network Engineering roles.",
+        "Past rotations:  Optical Networking Technologies, Network Supply Chain & Commercial Operations."
       ]
     },
     {
@@ -157,14 +157,24 @@ const workExperiences = {
       company: "NetApp",
       companylogo: require("./assets/images/netappLogo.png"),
       date: "June 2021 – August 2021",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      descBullets: [
+        "Designed an innovative DataOps demonstration leveraging Linux, Kubeflow, Kubernetes, and Docker to highlight latest NetApp AI and machine learning capabilities",
+        "Led channel-partner technical sales enablement efforts with NVIDIA data scientists through deployment and setup of DataOps demo environment with NVIDIA DGX and GPUs",
+        "Actively supported pre-sales presentations on NetApp’s Cloud Portfolio by preparing and following up on customer questions",
+        "Developed strong client relationships through working directly with vendors, partners, and sales"
+      ]
     },
     {
       role: "Technical Fellow",
       company: "BU Spark!",
       companylogo: require("./assets/images/buSparkLogo.png"),
       date: "September 2021 – May 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      descBullets: [
+        "Formulated customer personas, validation experiments, user story maps, CI/CD, and Agile development methods to design a user-centered software application to improve public speaking ability in the workplace",
+        "Created user authentication function with SAML 2.0 to track user configurations for onboarding and personalized progress",
+        "Implemented highly available content distribution network architecture using AWS Lambda, DynamoDB, S3, CloudFront",
+        "Integrated React Native frontend with Python, SQL, and Flask backend deployed to an AWS EC2 Instance"
+      ]
     }
   ]
 };
@@ -181,16 +191,20 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects & Papers",
-  subtitle: "SOME PROJECTS AND RESEARCH PAPERS THAT I'M PARTICULARLY PROUD OF",
+  //subtitle: "SOME PROJECTS AND RESEARCH PAPERS THAT I'M PARTICULARLY PROUD OF",
   projects: [
     {
       image: require("./assets/images/bumrcLogo.jpeg"),
       projectName: "Boston University Mars Rover",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "BU Mars Rover is a student-run engineering team that designs an innovative Mars exploration rover to compete in the annual University Rover Challenge.",
       footerLink: [
         {
           name: "Visit Website",
           url: "http://bumrc.org/"
+        },
+        {
+          name: "View LinkedIn Page",
+          url: "https://www.linkedin.com/company/bu-mars-rover/"
         }
         //  you can add extra buttons here.
       ]
@@ -198,7 +212,7 @@ const bigProjects = {
     {
       image: require("./assets/images/homeDASHLogo.png"),
       projectName: "HOMEdash",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "An ArcGIS API-powered dashboard that displays real-time data streams related to the UN 2030 Sustainable Development Goals on a 3D globe with interactive visualization functions.",
       footerLink: [
         {
           name: "Visit Website",
@@ -213,7 +227,7 @@ const bigProjects = {
     {
       image: require("./assets/images/dataCenterReport.jpeg"),
       projectName: "Global Data Center Report 2020",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "A 40-page investment report on industry analysis and proposed long and short positions for the US, China, Hong Kong, and Singapore cloud infrastructure and data center market.",
       footerLink: [
         {
           name: "View Project",
@@ -224,7 +238,7 @@ const bigProjects = {
     {
       image: require("./assets/images/greaterBayArea.png"),
       projectName: "Assessing Greater China Business Environments 2021",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "Research paper that analyzes major political, legal, infrastructure, and economic factors influencing the Greater China business environment, and their impact on global expansion.",
       footerLink: [
         {
           name: "View Project",
@@ -241,19 +255,17 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+  //subtitle: "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
   achievementsCards: [
     {
       title: "AWS Certified Solutions Architect - Associate",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "Passed AWS certification exam, demonstrating the ability to strategically design well-architected distributed systems that are scalable, resilient, efficient, and fault-tolerant.",
       image: require("./assets/images/awsSAALogo.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
+          name: "View Credential",
           url: "https://www.credly.com/badges/0842f797-b81d-47d4-886d-c373f256f4cc/public_url"
         }
       ]
@@ -261,25 +273,24 @@ const achievementSection = {
     {
       title: "AWS Certified Cloud Practioner",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "Passed AWS certification exam, demonstrating cloud fluency and foundational understanding of AWS Cloud concepts, services, and terminology.",
       image: require("./assets/images/awsCPLogo.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
+          name: "View Credential",
           url: "https://www.credly.com/badges/4ab67fb6-a7be-4ddd-825b-b51d60291482/public_url"
         }
       ]
     },
     {
       title: "Certified Fiber Optics Installer",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+      subtitle: "Completed 4-day course on optical fiber installation, connectorization, splicing, and testing. Passed certification exam and hands-on lab test on mechanical and fusion splicing.",
       image: require("./assets/images/foiLogo.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
-          name: "Certification",
+          name: "View Credential",
           url: "https://www.credly.com/badges/cf2f4444-2861-4bcd-9aa5-b1783ef1993b/public_url"
         }
       ]
@@ -287,12 +298,12 @@ const achievementSection = {
 
     {
       title: "Implementing and Administering Cisco Networking Technologies",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      subtitle: "Completed a 5-day intensive course on installing, operating, configuring, and verifying basic IPv4 and IPv6 networks, through a combination of lecture, hands-on labs, and self-study, ",
       image: require("./assets/images/ciscoLogo.png"),
       imageAlt: "PWA Logo",
       footerLink: [
         {
-          name: "Certification",
+          name: "View Credential",
           url: "https://www.credly.com/badges/93de123e-58f4-4350-90f1-c0db38dea4f7/public_url"
         }
       ]
